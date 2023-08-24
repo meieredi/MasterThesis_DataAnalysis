@@ -1,0 +1,57 @@
+<script>
+    function luc21893_refresh_cell(cell) {
+        if( cell.luc21893 ) return;
+        cell.luc21893 = true;
+        console.debug('New code cell found...' );
+
+        var div = document.createElement('DIV');            
+        cell.parentNode.insertBefore( div, cell.nextSibling );
+        div.style.textAlign = 'right';
+        var a = document.createElement('A');
+        div.appendChild(a);
+        a.href='#'
+        a.luc21893 = cell;
+        a.setAttribute( 'onclick', "luc21893_toggle(this); return false;" );
+
+        cell.style.visibility='hidden';
+        cell.style.position='absolute';
+        a.innerHTML = '[show code]';        
+
+    }
+    function luc21893_refresh() {                
+        if( document.querySelector('.code_cell .input') == null ) {            
+            // it apeears that I am in a exported html
+            // hide this code
+            var codeCells = document.querySelectorAll('.jp-InputArea')
+            codeCells[0].style.visibility = 'hidden';
+            codeCells[0].style.position = 'absolute';                        
+            for( var i = 1; i < codeCells.length; i++ ) {
+                luc21893_refresh_cell(codeCells[i].parentNode)
+            }
+            window.onload = luc21893_refresh;
+        }                 
+        else {
+            // it apperas that I am in a jupyter editor
+            var codeCells = document.querySelectorAll('.code_cell .input')
+            for( var i = 0; i < codeCells.length; i++ ) {
+                luc21893_refresh_cell(codeCells[i])
+            }            
+            window.setTimeout( luc21893_refresh, 1000 )
+        }        
+    }
+
+    function luc21893_toggle(a) {
+        if( a.luc21893.style.visibility=='hidden' ) {
+            a.luc21893.style.visibility='visible';        
+            a.luc21893.style.position='';
+            a.innerHTML = '[hide code]';
+        }
+        else {
+            a.luc21893.style.visibility='hidden';        
+            a.luc21893.style.position='absolute';
+            a.innerHTML = '[show code]';
+        }
+    }
+
+    luc21893_refresh()
+</script>
