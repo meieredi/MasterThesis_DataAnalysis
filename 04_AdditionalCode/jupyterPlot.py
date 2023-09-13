@@ -58,7 +58,7 @@ def plotDLS(corrData, intData, fileNames, param):
             if len(fileNames)%2 == 1:
                 darkGray = [0.45, 0.45, 0.45, 1]  # RGBA value, in closed interval [0,1]
                 colMap = getattr(plt.cm, cmap)(np.linspace(0,1,len(fileNames)))
-                colMap[1] = darkGray
+                colMap[int((len(fileNames)+1)/2) - 1] = darkGray
                 plt.rcParams["axes.prop_cycle"] = plt.cycler("color", colMap)
             else:
                 plt.rcParams["axes.prop_cycle"] = plt.cycler("color", getattr(plt.cm, cmap)(np.linspace(0,1,len(fileNames))))
