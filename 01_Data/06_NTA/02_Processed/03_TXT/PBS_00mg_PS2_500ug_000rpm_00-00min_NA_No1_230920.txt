@@ -1,0 +1,74 @@
+Original File:	E:\Arosio\Karl\Soft Corona\20230919_0021_PS20_U_size_405.avi	Section:	0,1 [0]
+Operator:	pharmagal
+Experiment:	20230919_0021
+ZetaVIEW S/N:	18-359
+Software:	ZetaView (version 8.05.12 SP1)	Analyze:	8.05.12 SP1
+Sample:	PS20_U
+Electrolyte:	diw
+pH:	7,400000	entered
+Conductivity: NaN	sensed
+Temperature:	30,700000	sensed
+Viscosity:	0,787729
+Date:	2023-09-19
+Time:	14:02:26
+General Remarks:	
+Remarks:	
+Sample Remarks0:	
+Sample Remarks1:	
+Sample Remarks2:
+Scattering Intensity:	4,774870
+Detected Particles:	6
+Particle Drift Checked:	2023-09-19 13:40:19
+Particle Drift Check Result:	OK
+Cell Checked:	2023-09-19 09:54:35
+Cell Check Result:	Very Good
+Type of Measurement:	Size Distribution
+Microscope Position:	0,100004
+Number of Traces:	0	(at 0,100000)	Average Number of Particles:	NaN	Dilution::	100,000000
+Image Evaluation:
+Minimum Brightness:	30
+Minimum Area:	10
+Maximum Area:	1000
+Maximum Brightness:	255
+Tracking Radius2:	100
+Minimum Tracelength:	30
+Begin New Traces:	1
+PSD log Correction:	0
+Camera:	FpSec 60 #Cycles 2 FRate 30,000000
+Gain:	28,800000
+Offset:	0,000000
+Shutter:	125,000000
+Brightness:	NaN
+Gamma:	NaN
+Auto Exposure:	NaN
+Camera Trigger Mode:	Camera Frequency
+Camera Trigger Duration mus:	Shutter Duration
+Camera Trigger Delay mus:	0
+Laser Wavelength nm:	405,000000
+Filter Wavelength nm:	Scatter
+Position:	0,100004
+actual Microscope:	-84667	(Pos	0,100004)
+actual Laser:	-214066
+Position0 Microscope:	-92095
+Position0 Laser:	-224010
+Position1 Microscope:	-17818
+Position1 Laser:	-124573
+Cell Thickness (Microscope Steps):	-74277
+Cell Thickness (Laser Steps):	-99437
+SL1 (Stationary Layer 1):	0,149500
+SL2 (Stationary Layer 2):	0,850500
+Cell parameter:
+Cell#:	ZNTA
+Micrometer per Pixel:	0,712000
+Reference Electrode Distance:	5,150000
+Voltage:	0,000000
+Polarity:	1
+Reference Voltage:	0,000000
+Microscope Magnification:	x10
+ZP Factor:	11,616210 (Smoluchowski)Results (Pos 0,100004):
+Median Number (D50):	0,000000
+Median Concentration (D50):	0,000000
+Median Volume (D50):	0,000000
+Size Distribution
+Size / nm	Number	Concentration / cm-3	Volume / nm^3	Area / nm^2
+-1,000E+0	-1,000E+0	-1,000E+0	-1,000E+0	0,000E+0
