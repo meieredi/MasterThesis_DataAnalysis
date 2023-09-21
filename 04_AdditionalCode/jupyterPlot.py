@@ -469,7 +469,7 @@ def plotMDI(countData, fileNames, param):
 
             # Add some text for labels, title and custom x-axis tick labels, etc.
             #ax.set_xlabel('Experiments')
-            ax.set_ylabel('Number Density [mL$^{-1}$]')
+            ax.set_ylabel('Concentration [mL$^{-1}$]')
             ax.tick_params(labelbottom=True, labeltop=False, labelleft=True, labelright=False,
                             bottom=True, top=False, left=True, right=True, direction='in')
 
@@ -791,7 +791,7 @@ def plotSurfPub(corrData, intData, countData, plotName, cmap, font, mat):
 
             # Add some text for labels, title and custom x-axis tick labels, etc.
             #ax.set_xlabel('Experiments')
-            ax.set_ylabel('Number Density [mL$^{-1}$]')
+            ax.set_ylabel('Concentration [mL$^{-1}$]')
             ax.tick_params(labelbottom=True, labeltop=False, labelleft=True, labelright=False,
                             bottom=True, top=False, left=True, right=True, direction='in')
 
@@ -1328,9 +1328,9 @@ def plotConcPub(corrData, intData, countData, plotName, cmap, font, mat):
 
     ######## MDI Plot ########    
 
-    expNames = ('Sheared', 'Sheared, PS 20', 'Unsheared', 
-                'Sheared', 'Sheared, PS 20', 'Unsheared', 
-                'Sheared', 'Sheared, PS 20', 'Unsheared')
+    expNames = ('Sheared', 'Sheared, PS20', 'Unsheared', 
+                'Sheared', 'Sheared, PS20', 'Unsheared', 
+                'Sheared', 'Sheared, PS20', 'Unsheared')
 
     fileNames = ['JJ1_01mg_200rpm_10-00min', 'JJ1_01mg_PS2_250ug_200rpm_10-00min', 'JJ1_01mg_000rpm_00-00min_NA',
                  'JJ1_10mg_200rpm_10-00min', 'JJ1_10mg_PS2_250ug_200rpm_10-00min', 'JJ1_10mg_000rpm_00-00min_NA',
@@ -1425,7 +1425,7 @@ def plotConcPub(corrData, intData, countData, plotName, cmap, font, mat):
 
             # Add some text for labels, title and custom x-axis tick labels, etc.
             #ax.set_xlabel('Experiments')
-            ax.set_ylabel('Number Density [mL$^{-1}$]')
+            ax.set_ylabel('Concentration [mL$^{-1}$]')
             ax.tick_params(labelbottom=True, labeltop=False, labelleft=True, labelright=False,
                             bottom=True, top=False, left=True, right=True, direction='in')
 
@@ -1471,7 +1471,7 @@ def plotConcPub(corrData, intData, countData, plotName, cmap, font, mat):
 
     ######## DLS Plots ########    
 
-    plotLegend = ['Sheared', 'Sheared, PS 20', 'Unsheared']
+    plotLegend = ['Sheared', 'Sheared, PS20', 'Unsheared']
     fileNames = ['JJ1_01mg_200rpm_10-00min', 'JJ1_01mg_PS2_250ug_200rpm_10-00min', 'JJ1_01mg_000rpm_00-00min_NA']
 
     fileNames = [fileName + '_' + mat for fileName in fileNames]
@@ -1624,7 +1624,7 @@ def plotConcPub(corrData, intData, countData, plotName, cmap, font, mat):
                     fileColor = plt.rcParams['axes.prop_cycle'].by_key()['color'][i]
                     leg.legendHandles[i].set_color(fileColor)
 
-    plotLegend = ['Sheared', 'Sheared, PS 20', 'Unsheared']
+    plotLegend = ['Sheared', 'Sheared, PS20', 'Unsheared']
     fileNames = ['JJ1_10mg_200rpm_10-00min', 'JJ1_10mg_PS2_250ug_200rpm_10-00min', 'JJ1_10mg_000rpm_00-00min_NA']
     
     fileNames = [fileName + '_' + mat for fileName in fileNames]
@@ -1778,7 +1778,7 @@ def plotConcPub(corrData, intData, countData, plotName, cmap, font, mat):
                 fileColor = plt.rcParams['axes.prop_cycle'].by_key()['color'][i]
                 leg.legendHandles[i].set_color(fileColor)
 
-    plotLegend = ['Sheared', 'Sheared, PS 20', 'Unsheared']
+    plotLegend = ['Sheared', 'Sheared, PS20', 'Unsheared']
     fileNames = ['JJ1_50mg_200rpm_10-00min', 'JJ1_50mg_PS2_500ug_200rpm_10-00min', 'JJ1_50mg_000rpm_00-00min_NA']
     
     fileNames = [fileName + '_' + mat for fileName in fileNames]
@@ -2062,7 +2062,7 @@ def plotAirPub(corrData, intData, countData, plotName, cmap, font, mat):
 
             # Add some text for labels, title and custom x-axis tick labels, etc.
             #ax.set_xlabel('Experiments')
-            ax.set_ylabel('Number Density [mL$^{-1}$]')
+            ax.set_ylabel('Concentration [mL$^{-1}$]')
             ax.tick_params(labelbottom=True, labeltop=False, labelleft=True, labelright=False,
                             bottom=True, top=False, left=True, right=True, direction='in')
 
@@ -2602,9 +2602,9 @@ def plotPS2ConcPub(corrData, intData, countData, plotName, cmap, font, mat):
 
     ######## MDI Plot ########    
 
-    expNames = ('Sheared', 'Sheared, PS 20', 'Unsheared', 
-                'Sheared', 'Sheared, PS 20', 'Unsheared', 
-                'Sheared', 'Sheared, PS 20', 'Unsheared')
+    expNames = ('Sheared', 'Sheared, PS20', 'Unsheared', 
+                'Sheared', 'Sheared, PS20', 'Unsheared', 
+                'Sheared', 'Sheared, PS20', 'Unsheared')
 
     fileNames = ['JJ1_01mg_200rpm_10-00min', 'JJ1_01mg_PS2_250ug_200rpm_10-00min', 'JJ1_01mg_000rpm_00-00min_NA',
                  'JJ1_10mg_200rpm_10-00min', 'JJ1_10mg_PS2_250ug_200rpm_10-00min', 'JJ1_10mg_000rpm_00-00min_NA',
@@ -2699,7 +2699,7 @@ def plotPS2ConcPub(corrData, intData, countData, plotName, cmap, font, mat):
 
             # Add some text for labels, title and custom x-axis tick labels, etc.
             #ax.set_xlabel('Experiments')
-            ax.set_ylabel('Number Density [mL$^{-1}$]')
+            ax.set_ylabel('Concentration [mL$^{-1}$]')
             ax.tick_params(labelbottom=True, labeltop=False, labelleft=True, labelright=False,
                             bottom=True, top=False, left=True, right=True, direction='in')
 
@@ -2745,7 +2745,7 @@ def plotPS2ConcPub(corrData, intData, countData, plotName, cmap, font, mat):
 
     ######## DLS Plots ########    
 
-    plotLegend = ['Sheared', 'Sheared, PS 20', 'Unsheared']
+    plotLegend = ['Sheared', 'Sheared, PS20', 'Unsheared']
     fileNames = ['JJ1_01mg_200rpm_10-00min', 'JJ1_01mg_PS2_250ug_200rpm_10-00min', 'JJ1_01mg_000rpm_00-00min_NA']
 
     fileNames = [fileName + '_' + mat for fileName in fileNames]
@@ -2898,7 +2898,7 @@ def plotPS2ConcPub(corrData, intData, countData, plotName, cmap, font, mat):
                     fileColor = plt.rcParams['axes.prop_cycle'].by_key()['color'][i]
                     leg.legendHandles[i].set_color(fileColor)
 
-    plotLegend = ['Sheared', 'Sheared, PS 20', 'Unsheared']
+    plotLegend = ['Sheared', 'Sheared, PS20', 'Unsheared']
     fileNames = ['JJ1_10mg_200rpm_10-00min', 'JJ1_10mg_PS2_250ug_200rpm_10-00min', 'JJ1_10mg_000rpm_00-00min_NA']
     
     fileNames = [fileName + '_' + mat for fileName in fileNames]
@@ -3052,7 +3052,7 @@ def plotPS2ConcPub(corrData, intData, countData, plotName, cmap, font, mat):
                 fileColor = plt.rcParams['axes.prop_cycle'].by_key()['color'][i]
                 leg.legendHandles[i].set_color(fileColor)
 
-    plotLegend = ['Sheared', 'Sheared, PS 20', 'Unsheared']
+    plotLegend = ['Sheared', 'Sheared, PS20', 'Unsheared']
     fileNames = ['JJ1_50mg_200rpm_10-00min', 'JJ1_50mg_PS2_500ug_200rpm_10-00min', 'JJ1_50mg_000rpm_00-00min_NA']
     
     fileNames = [fileName + '_' + mat for fileName in fileNames]
