@@ -1967,16 +1967,16 @@ def plotAirPub(corrData, intData, countData, plotName, cmap, font, mat):
 
     expNames = ('Sheared', 'Sheared, Air', 'Unsheared', 
                 'Sheared', 'Sheared, Air', 'Unsheared', 
-                'Sheared', 'Sheared, Air', 'Unsheared')
+                'Sheared', 'Sheared, Air', 'Sheared, PS20 + Air', 'Unsheared')
 
     fileNames = ['JJ1_01mg_200rpm_10-00min', 'JJ1_01mg_AIR_010%v_200rpm_10-00min', 'JJ1_01mg_000rpm_00-00min_NA',
                  'JJ1_10mg_200rpm_10-00min', 'JJ1_10mg_AIR_010%v_200rpm_10-00min', 'JJ1_10mg_000rpm_00-00min_NA',
-                 'JJ1_50mg_200rpm_10-00min', 'JJ1_50mg_AIR_010%v_200rpm_10-00min', 'JJ1_50mg_000rpm_00-00min_NA']
+                 'JJ1_50mg_200rpm_10-00min', 'JJ1_50mg_AIR_010%v_200rpm_10-00min', 'JJ1_50mg_APS_500ug_200rpm_10-00min', 'JJ1_50mg_000rpm_00-00min_NA']
     
     fileNames = [fileName + '_' + mat for fileName in fileNames]
     fileNames[2] = 'JJ1_01mg_000rpm_00-00min_NA'
     fileNames[5] = 'JJ1_10mg_000rpm_00-00min_NA'
-    fileNames[8] = 'JJ1_50mg_000rpm_00-00min_NA'
+    fileNames[9] = 'JJ1_50mg_000rpm_00-00min_NA'
 
 
     # Set parameter lists containing plotting parameters
@@ -2049,7 +2049,7 @@ def plotAirPub(corrData, intData, countData, plotName, cmap, font, mat):
 
         if firstTime:
 
-            figWidth = 20
+            figWidth = 25
             figHeight = figWidth/1.8
             
             fig = plt.figure(figsize=(figWidth, figHeight))
